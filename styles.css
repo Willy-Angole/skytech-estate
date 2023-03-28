@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .image-left img {
+    object-fit: cover;
+    background-position: center;
+    height: 45vh;
+    width: 100%;
+  }
+  
+  .container {
+    background-color: rgba(248, 246, 243, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 0.6em;
+  }
+  
+  .heading h3 {
+    color: purple;
+  }
