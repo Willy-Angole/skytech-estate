@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ECF0F5;
+    height: 100vh;
+    width: 100%;
+}
+
+.card {
+    width: 32rem;
+    height: 45rem;
+    margin-top: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 250px;
+    background-position: center;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+.card-body h5 {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.submitbtn {
+    color: #fff;
+    background-color: rgb(68, 37, 37);
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.card-links {
+    text-align: center;
+}
+
+.signature {
+    text-align: center;
+    color: black;
+}
