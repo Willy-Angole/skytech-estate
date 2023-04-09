@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-Home</title>
+    <!--|||||||||||| bootstrap link css |||||||||||||||||-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!--||||||||||||||||| Font Awesome links ||||||||||||||||||-->
+    <script src="https://kit.fontawesome.com/8ed8e25ee9.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background-color: #e9c5c5;
+        }
+        nav {
+            height: 40px;
+            color: whitesmoke;
+            background-color: rgb(78, 58, 58);
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: inline-block;
+            line-height: 1.5;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 0 10px;
+            align-items: center;
+            display: flex;
+        }
+
+        .card-text {
+            border: 2px solid pink;
+            background: yellowgreen;
+            border-radius: 10px;
+            width: 50%;
+            padding: 0 15px;
+        }
+
+        .change-btn {
+            border: 2px solid blueviolet;
+            padding: 3px;
+        }
+
+        .change-btn:hover {
+            border: 2px solid blueviolet;
+        }
+
+        /* accordion */
+        details {
+            position: relative;
+        }
+
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details summary::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=") no-repeat 50% 50% / 1em 1em;
+            width: 1.5em;
+            height: 1.5em;
+            transition: transform 0.1s linear;
+        }
+
+        summary {
+            width: 100%;
+            padding: 20px;
+            padding-left: 25px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        summary:hover {
+            color: #007bff;
+        }
+
+        summary:focus {
+            outline: none;
+        }
+
+        details[open] summary:before {
+            transform: rotate(90deg);
+        }
+
+        details[open]>summary {
+            color: #007bff;
+        }
+
+        details[open]>summary~* {
+            animation: open 1s ease;
+        }
+
+        p.source {
+            padding-top: 50px;
+            font-size: 0.75em;
+            text-align: center;
+        }
+
+        @keyframes open {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="profile">
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#about">Documents</a></li>
+                <li><a href="#contact">Agreements</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mt-3" style="width: 18rem;">
+                    <img class="card-img-top" src="images/home.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">Welcome</h6>
+                        <h2 class="card-title">Willy Angole</h2>
+                        <p class="card-text">id:12325465</p>
+
+                        <h6 class="card-title">Phone Number</h6>
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">254</span>
+                            </div>
+                            <input type="number" class="form-control" value="07545636553" readonly>
+                        </div>
+
+                        <h6 class="card-title">Email</h6>
+                        <div class="form-group">
+                            <input class="form-control form-control-sm" type="text" value="willyangole@gmail.com"
+                                readonly>
+                        </div>
+                        <button type="button" class="btn mt-2 btn-lg btn-block change-btn">Change Profile
+                            Password</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-10 offset-1">
+
+                            <details>
+                                <summary>General Information</summary>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Title</h6>
+                                        <div class="card">
+                                            <div class="card-body p-2">
+                                                Mr
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <h6>Name</h6>
+                                        <div class="card">
+                                            <div class="card-body p-2">
+                                                Willy Angole
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="inputDate">Dob</label>
+                                            <input type="date" class="form-control" id="inputDate"
+                                                placeholder="Enter date">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="selectInput">Year of Study</label>
+                                            <select class="form-control" id="selectInput">
+                                                <option value="Option 1">Option 1</option>
+                                                <option value="Option 2">Option 2</option>
+                                                <option value="Option 3">Option 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <P class="card-title">Nationality</P>
+                                        <div class="card">
+                                            <div class="card-body p-2">
+                                                Kenyan
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="selectInput">Institution</label>
+                                            <select class="form-control" id="selectInput">
+                                                <option value="Option 1">UoN</option>
+                                                <option value="Option 2">kenyatta University</option>
+                                                <option value="Option 3">Kabarak University</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </details>
+                            <details>
+                                <summary>Guarantor Information</summary>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Name</h6>
+                                        <div class="card">
+                                            <div class="card-body p-2">
+                                                Mr
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6>Email</h6>
+                                        <div class="card">
+                                            <div class="card-body p-2">
+                                                James
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="col-md-6">
+                                            <h6>Phone</h6>
+                                            <div class="card">
+                                                <div class="card-body p-2">
+                                                    08736525652
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Why do we use it?</summary>
+                                <p>Holla this is the last accordion ;></p>
+                            </details>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--|||||||||||||| js bootstrap link |||||||||||||||||-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        // Fetch all details element
+        const details = Array.from(document.querySelectorAll("details"));
+
+        // Add onclick listeners
+        details.forEach(targetDetail => {
+            targetDetail.addEventListener("click", () => {
+                // Close all details that are not targetDetail
+                details.forEach(detail => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute("open");
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
